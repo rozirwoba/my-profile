@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+* {
+    font-family: 'Righteous', sans-serif;
+    color: #fff;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #EE7752, #E73C7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+
+}
+
+.deskripsi p {
+    width: 50%;
+    word-wrap: break-word;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    color: #fff !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(-50deg, #6f00ff, #994cff);
+    transition: 0.4s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+}
+
+a:not(:hover) {
+    transform: scale(1);
+    transition: 0.4s ease-in-out;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    /* background-color: black; */
+    padding-left: 10px;
+  }
+  
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
